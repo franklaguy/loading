@@ -3,8 +3,8 @@ var CHECKLOADING = {
 				this.onload(); // Step One: check if page has finished loading
 				this.ready(); // Step Two: double check if page has finished loading using readyState
 				this.history(); // Step Three: check if back or forward button is clicked
-				this.singlePage(); // Step Three: check when content is loaded via AJAX in single page Apps - make sure all images are loaded
-				this.state(); // check ready state - check for ADDITIONAL DOM objects 'loading...'
+				this.singlePage(); // Step Four: check when content is loaded via AJAX in single page Apps - make sure all images are loaded
+				this.state(); // Test: check ready state - check for ADDITIONAL DOM objects 'loading...'
 			},
 			onload: function() {
 				const load = () => { this.check(); } 
