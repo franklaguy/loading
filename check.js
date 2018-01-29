@@ -26,9 +26,6 @@ var CHECKLOADING = {
 				window.onpopstate = function() {
 					this.onload();
 				};
-				window.onpushstate = function() {
-					this.onload();
-				};
 			},
 			state: function() {
 				function ready() {
